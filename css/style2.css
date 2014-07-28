@@ -1,0 +1,152 @@
+*{
+	margin: 0; padding: 0;
+}
+body {
+	background-color: #333;
+}
+
+.rad_men {
+	position: relative;
+	width: 500px; 
+	height: 500px;
+	margin: 50px auto;
+	background-color: #333;
+	/*box-shadow: 0 0 3px #ccc;*/
+}
+.rad_men .center {
+	position: absolute;
+	top: 150px; 
+	left: 150px;
+	width: 200px; height: 200px;
+	background-color: #333;
+	border-radius: 50%;
+	z-index: 1000;
+	background-image: url('../img/1.jpg');
+	background-repeat:  no-repeat;
+	background-size: 170%;
+	background-position: -80px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+	transition: 1s linear;
+	-moz-transition: 1s linear;
+	-webkit-transition: 1s linear;
+
+}
+.rad_men ul {
+	position: absolute;
+	width: 400px; 
+	height: 400px;
+	margin: 50px;
+	list-style: none;
+	border-radius: 50%;
+	overflow: hidden;
+	transition: 1s ease;
+	-moz-transition: 1s ease;
+	-webkit-transition: 1s ease;
+	box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.5) inset;
+	transform: rotate(60deg);
+}
+.rad_men ul li {
+	position: absolute;
+	top: -10px; 
+	left: -10px;
+	width: 210px; 
+	height: 210px;
+	background-color: rgba(145,145,145, 0.1);
+	transform-origin: 100% 100%;
+	overflow: hidden;
+}
+.rad_men ul li a {
+	display: block;
+	width: 210px; 
+	height: 210px;
+	background-color: rgba(241, 196, 15, 0.5);
+	transform: skew(-30deg) rotate(-60deg);
+	margin: 52.5px 0 0 52.5px;
+	transition: 1s ease;
+	-moz-transition: 1s ease;
+	-webkit-transition: 1s ease;
+}
+
+.rad_men ul li:nth-child(even) a {	
+	background-color: rgba(201, 146, 15, 0.7);
+}
+
+.rad_men ul li.selected:hover a {
+	background-color: rgba(241, 196, 15, 0.5);
+}
+.rad_men ul li.selected:nth-child(even):hover a {
+	background-color: rgba(201, 146, 15, 0.7);
+}
+
+.selected:hover {
+	
+}
+
+ul:hover {
+
+}
+.rad_men ul li:hover a {
+	background-color: rgba(261, 216, 35, 0.9);
+}
+
+.men_main {
+	transform: skew(30deg);
+}
+.men_main a{
+	background-image: url('../img/home-2.png');
+	background-repeat: no-repeat;
+	background-position: 45% 20%;
+}
+
+.men_works {
+	transform: rotate(60deg) skew(30deg);
+}
+.men_works a{
+	background-image: url('../img/flask-full.png');
+	background-repeat: no-repeat;
+	background-position: 45% 20%;
+}
+
+.men_about {
+	transform: rotate(120deg) skew(30deg);
+}
+.men_about a{
+	background-image: url('../img/user.png');
+	background-repeat: no-repeat;
+	background-position: 45% 20%;
+}
+
+.men_contacts {
+	transform: rotate(180deg) skew(30deg);
+}
+
+.men_contacts a{
+	background-image: url('../img/envelope.png');
+	background-repeat: no-repeat;
+	background-position: 45% 20%;
+}
+
+.men_library {
+	transform: rotate(240deg) skew(30deg);
+}
+.men_library a{
+	background-image: url('../img/book-lines.png');
+	background-repeat: no-repeat;
+	background-position: 45% 20%;
+}
+
+.men_licence {
+	transform: rotate(300deg) skew(30deg);
+}
+.men_licence a{
+	background-image: url('../img/key-2.png');
+	background-repeat: no-repeat;
+	background-position: 45% 20%;
+}
+/*
+					  "men_main"><a href="">1</a></li>
+			<li class="men_works"><a href="">2</a></li>
+			<li class="men_about"><a href="">3</a></li>
+			<li class="men_contacts"><a href="">4</a></li>
+			<li class="men_library"><a href="">5</a></li>
+			<li class="men_licence
