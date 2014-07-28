@@ -23,9 +23,9 @@ body {
 	z-index: 1000;
 	background-image: url('../img/1.jpg');
 	background-repeat:  no-repeat;
-	background-size: 170%;
+	background-size: 300%;
 	background-position: -80px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	transition: 1s linear;
 	-moz-transition: 1s linear;
 	-webkit-transition: 1s linear;
@@ -78,8 +78,8 @@ body {
 	background-color: rgba(201, 146, 15, 0.7);
 }
 
-.selected:hover {
-	
+.selected {
+	box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.6) inset;
 }
 
 ul:hover {
