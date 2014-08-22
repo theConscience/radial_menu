@@ -7,12 +7,18 @@ body {
 
 .rad_men {
 	position: relative;
+	top: -300px;
 	width: 500px; 
 	height: 500px;
 	margin: 50px auto;
 	background-color: #333;
-	/*box-shadow: 0 0 3px #ccc;*/
-}
+	transition: 0.5s linear;
+	-moz-transition: 0.5s linear;
+	-webkit-transition: 0.5s linear;
+	/*box-shadow: 0 0 3px #ccc;*/ }
+.rad_men:hover {
+	top: -50px; }
+
 .rad_men .center {
 	position: absolute;
 	top: 150px; 
@@ -179,10 +185,11 @@ ul:hover {
 .content:nth-of-type(even) {
 	background-color: #656565;
 }*/
-.right {right: -2000px;}
-.left {left: -2000%;}
+.right { right: -2500px; }
+.left { left: -2500px; }
 .centered {
 	left: 0px;
 	right: 0px;
-	margin: auto;
-}
+	margin: auto; }
+.hide { visibility: hidden; }
+.show { visibility: visible; }
